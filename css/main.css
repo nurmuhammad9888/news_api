@@ -1,0 +1,81 @@
+.news-image{
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+.news-url{
+    position: relative;
+}
+.news-url::after{
+    position: absolute;
+    top: 4px;
+    right: -30px;
+    width: 25px;
+    height: 20px;
+    content: '';
+    background-image: url("../images/arrow-small-right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.new-time{
+    position: relative;
+    padding-left: 35px;
+}
+.new-time::before{
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 25px;
+    height: 20px;
+    content: '';
+    background-image: url("../images/calendar-clock.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.5;
+}
+.input-new-js{
+    padding-left: 40px;
+    background-image: url("../images/search.svg");
+    background-position: calc(8% - 5px);
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    opacity: 0.7;
+}
+.news-countries-list{
+    background-color: #F0F0F0;
+}
+.news-countries-link {
+    color: #585858;
+    font-size: 14px;
+}
+.news-nav-link:hover{
+    color: #0000ee !important;
+}
+.news-countries-text{
+
+}
+.counter-text{
+        background-color: #17206a;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        position: relative;
+}
+.counter-text:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -12px;
+    width: 0;
+    height: 0;
+    margin: auto;
+    border-style: solid;
+    border-width: 20px 0 20px 12px;
+    border-color: transparent transparent transparent #17206a;
+}
+.active{
+    color: #0000ee;
+}
